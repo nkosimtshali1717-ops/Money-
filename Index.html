@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎁 WIN R400 Takealot Voucher! 🎁</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .logo {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .prize-image {
+            width: 200px;
+            height: 150px;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            border-radius: 15px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .steps {
+            text-align: left;
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 25px 0;
+        }
+
+        .step {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .step-number {
+            background: #FFD700;
+            color: #333;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .cta-button {
+            background: #FFD700;
+            color: #333;
+            border: none;
+            padding: 18px 40px;
+            font-size: 1.3em;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255,215,0,0.4);
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background: #FFA500;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255,215,0,0.6);
+        }
+
+        .countdown {
+            font-size: 1.1em;
+            margin: 15px 0;
+            opacity: 0.9;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #shareSection {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 15px;
+        }
+
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .share-btn {
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp { background: #25D366; }
+        .instagram { background: #E4405F; }
+        .facebook { background: #1877F2; }
+
+        .share-btn:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .small-text {
+            font-size: 0.9em;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🎁</div>
+        <h1>WIN R400 TAKALOT VOUCHER!</h1>
+        <p>Complete one simple offer and get instant entry to win!</p>
+
+        <div class="prize-image">
+            R400 VOUCHER
+        </div>
+
+        <div class="countdown">
+            ⏰ Giveaway ends in: <strong>72 HOURS</strong>
+        </div>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div>Click the button below to complete a quick offer</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div>We'll verify your completion automatically</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div>Share your unique link for extra entries</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div>Winner announced tomorrow via WhatsApp!</div>
+            </div>
+        </div>
+
+        <!-- Main CTA Button -->
+        <a href="#" id="cpaLink" class="cta-button">
+            🎯 CLICK HERE TO ENTER & WIN!
+        </a>
+
+        <p class="small-text">No purchase necessary. Complete any free offer to enter.</p>
+
+        <!-- Share Section (Initially Hidden) -->
+        <div id="shareSection" class="hidden">
+            <h3>🎉 CONGRATS! You're Entered!</h3>
+            <p>Share your unique link for <strong>5 EXTRA ENTRIES</strong>:</p>
+
+            <div class="share-buttons">
+                <a href="#" id="whatsappShare" class="share-btn whatsapp">
+                    📱 WhatsApp
+                </a>
+                <a href="#" id="instagramShare" class="share-btn instagram">
+                    📸 Instagram
+                </a>
+                <a href="#" id="facebookShare" class="share-btn facebook">
+                    👍 Facebook
+                </a>
+            </div>
+
+            <p class="small-text">Winner will be contacted directly via WhatsApp tomorrow!</p>
+        </div>
+    </div>
+
+    <script>
+        // Configuration - YOU NEED TO UPDATE THESE
+        const config = {
+            // Get this from your CPA network dashboard
+            cpaOfferUrl: "YOUR_CPA_OFFER_LINK_HERE",
+
+            // Your site URL (after deploying to Netlify)
+            yourSiteUrl: "YOUR_NETLIFY_URL_HERE",
+
+            // Postback URL for verification (CPA network will call this)
+            postbackUrl: "YOUR_POSTBACK_ENDPOINT"
+        };
+
+        // Generate a unique ID for each user
+        function generateUserId() {
+            return 'user_' + Math.random().toString(36).substr(2, 9) + '_' + Date.now();
+        }
+
+        // Get or create user ID
+        let userId = localStorage.getItem('giveawayUserId');
+        if (!userId) {
+            userId = generateUserId();
+            localStorage.setItem('giveawayUserId', userId);
+        }
+
+        // Add tracking to CPA link
+        const cpaLink = document.getElementById('cpaLink');
+        const trackedCpaUrl = `${config.cpaOfferUrl}&subid=${userId}&redirect=${encodeURIComponent(config.yourSiteUrl + '?completed=true')}`;
+        cpaLink.href = trackedCpaUrl;
+
+        // Check if user completed offer (simplified version)
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('completed') === 'true') {
+            showShareSection();
+
+            // In real implementation, CPA network would send postback to your server
+            // For now, we'll simulate successful completion
+            console.log('User completed offer:', userId);
+        }
+
+        function showShareSection() {
+            document.getElementById('shareSection').classList.remove('hidden');
+
+            // Generate shareable link with referral tracking
+            const shareUrl = `${config.yourSiteUrl}?ref=${userId}`;
+            const shareText = encodeURIComponent("🎁 I just entered to win a R400 Takealot voucher! Enter here: " + shareUrl);
+
+            // Set up share buttons
+            document.getElementById('whatsappShare').href = `https://wa.me/?text=${shareText}`;
+            document.getElementById('instagramShare').href = `https://www.instagram.com/direct/inbox/`;
+            document.getElementById('facebookShare').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
+        }
+
+        // Simulate postback handling (in real setup, this would be server-side)
+        function handlePostback(offerId, userId, payout) {
+            console.log('Postback received:', { offerId, userId, payout });
+            // Here you would:
+            // 1. Verify the postback is legitimate
+            // 2. Mark user as completed in your database
+            // 3. Show them the share section
+        }
+    </script>
+</body>
+  </html>
